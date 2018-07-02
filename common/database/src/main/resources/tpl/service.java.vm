@@ -1,0 +1,18 @@
+package ${package.Service};
+
+import ${package.Entity}.${entity};
+import ${superServiceClassPackage};
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.stereotype.Service;
+
+/**
+ * <p>
+ * ${table.comment}  服务接口
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+public interface  ${entity}Service extends ${superServiceClass}<${entity}> {
+	
+}

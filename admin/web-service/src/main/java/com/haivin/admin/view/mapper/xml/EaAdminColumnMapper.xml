@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haivin.admin.view.mapper.EaAdminColumnMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.haivin.admin.view.entity.EaAdminColumn">
+                    <id column="id" property="id" />
+                    <result column="admin_component_id" property="adminComponentId" />
+                    <result column="ea_table_id" property="eaTableId" />
+                    <result column="ea_column_id" property="eaColumnId" />
+                    <result column="type" property="type" />
+                    <result column="title" property="title" />
+                    <result column="editable" property="editable" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+			id, admin_component_id AS adminComponentId, ea_table_id AS eaTableId, ea_column_id AS eaColumnId, type, title, editable
+        </sql>
+
+</mapper>

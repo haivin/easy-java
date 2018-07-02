@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haivin.admin.table.mapper.EaColumnInfoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.haivin.admin.table.entity.EaColumnInfo">
+                    <id column="id" property="id" />
+                    <result column="table_info_id" property="tableInfoId" />
+                    <result column="name" property="name" />
+                    <result column="property_name" property="propertyName" />
+                    <result column="title" property="title" />
+                    <result column="desc" property="desc" />
+                    <result column="verify" property="verify" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+			id, table_info_id AS tableInfoId, name, property_name AS propertyName, title, desc, verify
+        </sql>
+
+</mapper>

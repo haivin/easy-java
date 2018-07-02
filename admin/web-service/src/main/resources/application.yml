@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+package:
+  name: com.haivin
+
+database:
+  host: localhost
+  port: 3306
+  username: root
+  password: mysql
+  name: easy_admin
+
+
+spring:
+  profiles:
+    include: database
